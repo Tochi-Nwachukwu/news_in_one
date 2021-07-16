@@ -4,10 +4,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.news-image {
-  width: 500px;
-}
-
 .input-bar {
   height: 20vh;
   width: 100vw;
@@ -98,4 +94,86 @@ a#news-link {
 
 .empty-state {
   color: rgb(85, 81, 81);
+}
+
+@media screen and (max-width: 768px) {
+  .input-bar {
+    height: 15%;
+    width: 100%;
+    background-color: #de4646de;
+    z-index: 3;
+  }
+  #search-input {
+    width: 90%;
+    height: 40%;
+    border-radius: 80px;
+  }
+
+  .results {
+    padding: 10px;
+    margin-top: 13%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card {
+    height: 640px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -20px;
+    z-index: 2;
+  }
+
+  .content {
+    margin: 10px;
+    background-color: #f5eeee;
+    height: 250px;
+    width: 300px;
+    border-radius: 12px;
+    padding: 15px;
+  }
+
+  .content h1 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  a#news-link {
+    background-color: #f33535;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .util-bold {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .bottom {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .empty-state {
+    color: rgb(85, 81, 81);
+  }
 }
