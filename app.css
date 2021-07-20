@@ -134,23 +134,34 @@ a#news-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
     padding: 0;
   }
 
   .image-div {
-    margin-bottom: -20px;
     z-index: 2;
     flex: 1;
+    position: relative;
   }
-
+  .image {
+    width: 150px;
+    height: 150px;
+    background-color: #f5eeee;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    position: absolute;
+    bottom: -80px;
+    left: -110px;
+  }
   .content {
     height: 20%;
     width: 100%;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     padding: 15px;
-    background-color: blue;
     flex: 1;
   }
 
