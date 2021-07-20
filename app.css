@@ -13,7 +13,7 @@
   justify-content: center;
   position: fixed;
   top: 0%;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px -2px rgba(94, 94, 94, 0.2);
 }
 #search-input {
   width: 50%;
@@ -130,8 +130,8 @@ a#news-link {
   }
 
   .image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-bottom: -20px;
     z-index: 2;
   }

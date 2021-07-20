@@ -8,12 +8,13 @@ const searchInput = document.querySelector('#search-input')
 const resultBox = document.querySelector('.results')
 let newsData = []
 
-
+// http://127.0.0.1:8000/api/search?search=curriculum
 
 const getNews = (term = '', url = "news_table.json") => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             let main_data = data[2].data;
             newsData = [...main_data];
             let filteredData = main_data.filter(data => data.headline.toLowerCase().includes(term.toLowerCase()))
@@ -70,7 +71,10 @@ function showNews(data) {
 }
 
 searchInput.addEventListener('keyup', (e) => {
-    getNews(e.target.value)
+    if (e.keyCode === 13) {
+        getNews(e.target.value)
+    }
+
 })
 
 
