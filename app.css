@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .input-bar {
@@ -97,6 +98,11 @@ a#news-link {
 }
 
 @media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .input-bar {
     height: 15%;
     width: 100%;
@@ -107,13 +113,14 @@ a#news-link {
     width: 90%;
     height: 40%;
     border-radius: 80px;
+    font-size: 12px;
   }
 
   .results {
     padding: 10px;
     margin-top: 13%;
-    height: 100%;
-    width: 100%;
+    height: 10%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,28 +128,30 @@ a#news-link {
   }
 
   .card {
-    height: 640px;
+    height: 580px;
     width: 300px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: red;
+    padding: 0;
   }
 
-  .image {
-    width: 150px;
-    height: 150px;
+  .image-div {
     margin-bottom: -20px;
     z-index: 2;
+    flex: 1;
   }
 
   .content {
-    margin: 10px;
-    background-color: #f5eeee;
-    height: 250px;
-    width: 300px;
-    border-radius: 12px;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 15px;
+    background-color: blue;
+    flex: 1;
   }
 
   .content h1 {
@@ -173,7 +182,10 @@ a#news-link {
     align-items: flex-start;
   }
 
-  .empty-state {
+  h1.empty-state {
     color: rgb(85, 81, 81);
+    margin-top: 15%;
+    font-size: 18px;
+    text-align: center;
   }
 }

@@ -41,9 +41,12 @@ function showNews(data) {
     let cards = data.map(element => {
         return `
         <div class="card">
-            <div class="image" style="background-image: url('${element.image_links}'); background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;">
+            <div class = image-div>
+                <div class="image" style="background-image: url('${element.image_links}'); background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; height: 150px; width:150px; border-radius:50%;">
+            
+            </div>
                 
             </div>
             <div class="content">
